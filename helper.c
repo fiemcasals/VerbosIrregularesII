@@ -22,7 +22,7 @@ void extraer(lista* lista) {
     char perfecto[30];
     char definicion[30];
 
-    printf("ingrese el nombre del archivo a extraer\n");
+    printf("ingrese el nombre del archivo a extraer(por defecto 'listaVerbosIrregulares'\n");
     scanf("%s", titulo);
 
     FILE * archivo=fopen(plustxt(titulo),"r");
@@ -111,7 +111,7 @@ void imprimir(lista * listaTrabajo) {
             pasadas++;
             if(columna==1 && aux->bandera<columna){
                 pasadas=0;
-                printf("ingrese el presente de verbo %s\n", aux->definicion);
+                printf("ingrese el PRESENTE de verbo %s\n", aux->definicion);
                 scanf("%s", respuesta);
                 for (int indice = 0; respuesta[indice] != '\0'; ++indice){
                     respuesta[indice] = toupper(respuesta[indice]);
@@ -122,7 +122,7 @@ void imprimir(lista * listaTrabajo) {
                     printf("la respuesta correcta era: %s\n", aux->presente);}
             }else if(columna==2 && aux->bandera<columna){
                 pasadas=0;
-                printf("Ingrese el pasado de %s\n", aux->definicion);
+                printf("Ingrese el PASADO de %s\n", aux->definicion);
                 scanf("%s", respuesta);
                 for (int indice = 0; respuesta[indice] != '\0'; ++indice){
                     respuesta[indice] = toupper(respuesta[indice]);
@@ -134,7 +134,7 @@ void imprimir(lista * listaTrabajo) {
                     printf("la respuesta correcta era: %s\n", aux->pasado);}
             }else  if(columna==3 && aux->bandera<columna){
                 pasadas=0;
-                printf("Ingrese el presente perfecto de %s\n", aux->definicion);
+                printf("Ingrese el PRESENTE PERFECTO de %s\n", aux->definicion);
                 scanf("%s", respuesta);
                 for (int indice = 0; respuesta[indice] != '\0'; ++indice){
                     respuesta[indice] = toupper(respuesta[indice]);
