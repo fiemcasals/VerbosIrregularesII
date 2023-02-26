@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/VerbosIrregularesII.dir/main.c.o CMakeFiles/VerbosIrregularesII.dir/helper.c.o -o VerbosIrregularesII 
